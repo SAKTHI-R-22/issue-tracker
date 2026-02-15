@@ -1,0 +1,144 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* ===== AUTH (Login / Register) ===== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-card {
+  background: #ffffff;
+  padding: 32px;
+  width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.auth-card input:focus {
+  border-color: #667eea;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 11px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.auth-card button:hover {
+  background: #5a67d8;
+}
+
+/* ===== DASHBOARD LAYOUT ===== */
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* ===== ISSUE CARD ===== */
+.issue-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== STATUS BADGES ===== */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  margin-top: 8px;
+}
+
+.badge.OPEN {
+  background: #2196f3;
+}
+
+.badge.IN_PROGRESS {
+  background: #ff9800;
+}
+
+.badge.RESOLVED {
+  background: #4caf50;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-btn {
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-progress {
+  background: #ff9800;
+  color: white;
+}
+
+.btn-resolve {
+  background: #4caf50;
+  color: white;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+.logout-btn {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  background: crimson;
+  color: white;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
